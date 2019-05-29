@@ -1,0 +1,127 @@
+/* use google font */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+    color: #262626;
+}
+/* round buttons */
+.btn-round.btn-sm {
+    border-radius: 1rem;
+    padding: .25rem .75rem;
+}
+.btn-round {
+    border-radius: 1.25rem;
+    padding: .375rem 1rem;
+}
+.btn-round.btn-lg {
+    border-radius: 1.5rem;
+    padding: .5rem 1.25rem;
+}
+
+/* icon buttons */
+.btn-icon.btn-sm {
+    padding: .25rem .35rem;
+}
+.btn-icon {
+    padding: .375rem .5rem;
+}
+.btn-icon.btn-lg {
+    padding: .5rem .65rem;
+}
+
+/* ajax alerts */
+.alert-flash {
+    position: fixed;
+    top: 1rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/* datatables style tweaks */
+.dataTables_wrapper table {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    width: calc(100% + 2.5rem);
+}
+.dataTables_wrapper th, .dataTables_wrapper td {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    vertical-align: middle;
+}
+.dataTables_wrapper tbody tr:hover {
+    background-color: #E9ECEF;
+}
+
+ .bg-33691e {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("http://3.bp.blogspot.com/-qri-3HHEZg8/TyRywHasxOI/AAAAAAAAAIw/KoWw2G3iaUY/s1600/SENA%2B015.JPG");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 420px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+
+.loginBox h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #ffffff;
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="email"],
+.loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #00C851;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	background: rgb(2, 216, 88);
+	color: #262626;
+}
+
