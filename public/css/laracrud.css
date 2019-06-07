@@ -1,11 +1,9 @@
 /* use google font */
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'catamaran';
 }
 
-.navbar{
-    color: #262626;
-}
+
 /* round buttons */
 .btn-round.btn-sm {
     border-radius: 1rem;

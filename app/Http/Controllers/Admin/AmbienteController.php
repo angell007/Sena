@@ -44,9 +44,9 @@ class AmbienteController extends Controller
 
     public function create()
     {
-        request()->validate([
-            'name' => 'required|unique:ambientes',
-        ]);
+        // request()->validate([
+        //     'name' => 'required|unique:ambientes',
+        // ]);
 
         $ambiente = Ambiente::create(request()->all());
 

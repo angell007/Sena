@@ -18,8 +18,8 @@ class CreateLaracrudColumns extends Migration
         // create default admin user
         User::create([
             'name' => 'Admin',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('admin123'),
+            'email' => 'senahorarios@sena.com',
+            'password' => Hash::make('sena_bca'),
             'role' => 'Admin',
         ]);
     }
@@ -32,6 +32,6 @@ class CreateLaracrudColumns extends Migration
         });
 
         // delete default admin user
-        User::where('email', 'admin@example.com')->delete();
+        User::where('email', 'senahorarios@senacom')->delete();
     }
 }

@@ -12,4 +12,8 @@ class Ambiente extends Model
         'numero',
         'nombre'
     ];
+
+    function secion(){
+        return $this->hasMany(Secion::class);
+     }
 }

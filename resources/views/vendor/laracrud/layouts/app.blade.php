@@ -16,12 +16,14 @@
 </head>
 <body class="bg-light h-100">
     @yield('parent-content')
-
     <script src="{{ asset('/js/jquery.min.js') }}"></script>
     <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/js/datatables.min.js') }}"></script>
     <script src="{{ asset('/js/laracrud.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     @stack('scripts')
+    @yield('javascript')
+
+
 </body>
 </html>

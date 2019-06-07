@@ -100,41 +100,8 @@ class FichaController extends Controller
     {
 
         $id = $ficha->id;
-        $contenidos = Contenido::with('docente','competencia','ficha')->get();
+        $contenidos = Contenido::with('docente','competencia','ficha')->where('ficha_id',$ficha->id)->get();
         return view('admin.fichas.show', compact('contenidos', 'id','ficha'));
-
-        // $html = app('datatables.html')->columns([
-        //     ['title' => 'Docente', 'data' => 'id'],
-        //     ['title' => 'Competencia', 'data' => 'competencia_id'],
-        //     ['title' => 'Horas', 'data' => 'horas'],
-
-        //     // ['title' => '', 'data' => 'actions', 'searchable' => false, 'orderable' => false],
-        // ]);
-        // $html->ajax(route('admin.fichas.contenidos', $id));
-        // $html->setTableAttribute('id', 'datatables123');
-
-
     }
-
-    //   public function contenidos($id)
-    //   {
-    //       $docentes = "";
-    //       $competencias = "";
-        //   $fichas = "";
-
-        //   $contenidos = datatables(Contenido::with('docente','competencia','ficha')->get());
-        //   foreach ($contenidos as $key) {
-        //     array_push($docentes, $key->docente->id);
-        //     array_push($competencias, $key->competencia->id);
-
-        // }
-                // ->editColumn('actions', function ($contenido) {
-                //         return view('admin.fichas.datatables.actions', compact('contenido'));
-                //     })
-                    // ->rawColumns(['actions']);
-
-            //     return $contenidos->toJson();
-
-            // }
 
 }

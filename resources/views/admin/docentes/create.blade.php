@@ -32,10 +32,14 @@
         </div>
 
 
-
         <div class="modal-footer">
-            <button type="submit" class="btn btn-round btn-primary">Save</button>
+            <button  onclick="block" type="submit" class="btn btn-round btn-primary">Save</button>
             <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
     </form>
+
+
 @endsection
+
+{{-- @push('script') --}}
+{{-- @endpush --}}

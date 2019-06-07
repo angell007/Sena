@@ -1,15 +1,14 @@
 @extends('laracrud::layouts.modal')
 
-@section('title', 'Update Horario')
+@section('title', 'Create Disponibilidad')
 @section('content')
-    <form method="POST" action="{{ route('admin.horarios.update', $horario->id) }}" data-ajax-form>
+    <form method="POST" action="{{ route('admin.disponibilidads.create') }}" data-ajax-form>
         @csrf
-        @method('PATCH')
 
         <div class="modal-body">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" value="{{ old('name', $horario->name) }}">
+                <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}">
             </div>
         </div>
 

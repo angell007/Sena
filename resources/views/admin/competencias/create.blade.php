@@ -13,7 +13,7 @@
 
             <div class="form-group">
                     <label for="descripcion">Resultado de aprendizaje</label>
-                    <textarea type="text" name="descripcion" id="descripcion" class="form-control" value="{{ old('descripcion') }}"></textarea>
+                    <textarea type="text" name="description" id="descripcion" class="form-control" value="{{ old('description') }}"></textarea>
              </div>
 
 

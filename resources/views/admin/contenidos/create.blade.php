@@ -1,5 +1,4 @@
 @extends('laracrud::layouts.modal')
-
 @section('title', 'Create Contenido')
 @section('content')
     <form method="POST" action="{{ route('admin.contenidos.create',$id) }}" data-ajax-form>
@@ -34,8 +33,12 @@
 
 
         <div class="modal-footer">
-            <button type="submit" class="btn btn-round btn-success">Save</button>
+            <button onclick="myFunction()" id="click" type="submit" class="btn btn-round btn-success">Save</button>
             <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
     </form>
-@endsection
+
+    @endsection
+
+ 
+

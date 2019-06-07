@@ -15,7 +15,8 @@
 
     <div class="card">
         <div class="card-body">
-            {!! $html->table() !!}
+                       {!! $html->table(['class' => 'table bg-light text-dark display dataTable_width_auto'], true)!!}
+
         </div>
     </div>
 @endsection

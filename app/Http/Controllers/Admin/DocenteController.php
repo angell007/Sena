@@ -47,7 +47,9 @@ class DocenteController extends Controller
     public function create()
     {
         request()->validate([
-            'name' => 'required|unique:docentes',
+            'documento' => 'required|unique:docentes',
+            'name' => 'required',
+
         ]);
 
         $docente = Docente::create(request()->all());
@@ -67,7 +69,7 @@ class DocenteController extends Controller
     public function update(Docente $docente)
     {
         request()->validate([
-            'name' => 'required|unique:docentes,name,' . $docente->id,
+            'documento' => 'required|unique:docentes,documento,' . $docente->id,
         ]);
 
         $docente->update(request()->all());

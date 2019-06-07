@@ -16,7 +16,7 @@ class CompetenciaController extends Controller
     {
         $html = app('datatables.html')->columns([
             ['title' => 'Nombre', 'data' => 'name'],
-            ['title' => 'Descripcion', 'data' => 'descripcion'],
+            ['title' => 'Descripcion', 'data' => 'description'],
 
             ['title' => '', 'data' => 'actions', 'searchable' => false, 'orderable' => false],
         ]);
@@ -51,7 +51,7 @@ class CompetenciaController extends Controller
         $competencia = Competencia::create(request()->all());
 
         return response()->json([
-            'flash_now' => ['success', 'Competencia created!'],
+            'flash_now' => ['success', 'Competencia asasasas!'],
             'dismiss_modal' => true,
             'reload_datatables' => true,
         ]);

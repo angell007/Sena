@@ -13,6 +13,8 @@ class Contenido extends Model
         'competencia_id',
         'ficha_id',
         'horas'
+
+        
     ];
 
     function docente(){
