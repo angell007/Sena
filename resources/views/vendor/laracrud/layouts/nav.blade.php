@@ -3,9 +3,9 @@
     <li class="nav-item{!! request()->is('admin/disponibilidads') ? ' active' : '' !!}">
         <a href="{{ route('admin.disponibilidads') }}" class="nav-link text-light">Disponibilidads</a>
     </li>
-    {{-- <li class="nav-item{!! request()->is('admin/disponibilidad text-light') ? ' active' : '' !!}">
-        <a href="{{ route('disponibilidad.index') }}" class="nav-link text-light">Disponibilidad</a>
-    </li> --}}
+    <li class="nav-item{!! request()->is('admin/disponibilidad text-light') ? ' active' : '' !!}">
+        <a href="{{ url('importExport') }}" class="nav-link text-light">Importar</a>
+    </li>
     {{-- <li class="nav-item{!! request()->is('admin/horarios') ? ' active' : '' !!}">
         <a href="{{ route('admin.horarios') }}" class="nav-link">Horarios</a>
     </li>

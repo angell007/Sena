@@ -25,7 +25,8 @@ class Ficha extends Model
        'modalidad_id',
        'jornada',
        'trimestre_formacion',
-       'horas'
+       'horas',
+       'ref'
 
      ];
 }

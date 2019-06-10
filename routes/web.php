@@ -79,3 +79,7 @@ Route::post('admin/disponibilidads/create', 'Admin\DisponibilidadController@crea
 Route::get('admin/disponibilidads/update/{disponibilidad}', 'Admin\DisponibilidadController@updateModal')->name('admin.disponibilidads.update');
 Route::patch('admin/disponibilidads/update/{disponibilidad}', 'Admin\DisponibilidadController@update');
 Route::delete('admin/disponibilidads/delete/{disponibilidad}', 'Admin\DisponibilidadController@delete')->name('admin.disponibilidads.delete');
+
+Route::get('importExport', 'Admin\ExcellController@importExport');
+Route::get('downloadExcel/{type}', 'Admin\ExcellController@downloadExcel');
+Route::post('importExcel', 'Admin\ExcellController@importExcel');

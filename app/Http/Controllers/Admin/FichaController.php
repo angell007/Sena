@@ -18,6 +18,8 @@ class FichaController extends Controller
     {
         $html = app('datatables.html')->columns([
             ['title' => 'Nombre', 'data' => 'name'],
+            ['title' => '#', 'data' => 'ref'],
+
             ['title' => 'Modalidad', 'data' => 'modalidad_id'],
             ['title' => 'Trimestr', 'data' => 'trimestre_formacion'],
             ['title' => 'Jornada', 'data' => 'jornada'],

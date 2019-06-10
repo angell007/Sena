@@ -12,6 +12,11 @@
                 <input type="text" name="name" id="name" class="form-control" value="{{ old('name', $ficha->name) }}">
             </div>
 
+            <div class="form-group">
+                <label for="numero">#Numero de ficha</label>
+                <input type="text" name="ref" id="ref" class="form-control" value="{{ old('ref',  $ficha->ref) }}">
+            </div>
+
 
                 <div class="form-group">
                     <label for="modalidad" class="label label-control">Modalidad</label>
@@ -54,6 +59,6 @@
             <button type="submit" class="btn btn-round btn-primary">Save</button>
             <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
-   
+
     </form>
 @endsection

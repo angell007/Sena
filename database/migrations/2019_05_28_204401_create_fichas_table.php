@@ -16,6 +16,7 @@ class CreateFichasTable extends Migration
             $table->string("jornada");
             $table->string("trimestre_formacion");
             $table->string("horas");
+            $table->string("ref")->nullable();
             $table->timestamps();
         });
     }
